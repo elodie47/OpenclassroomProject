@@ -1,0 +1,62 @@
+/* * {
+    margin: 0;
+} */
+
+body {
+font-family: 'Raleway', sans-serif;
+}
+
+
+h1, h2 {
+font-size: 1rem;
+}
+
+h3 {
+font-size: 0.875rem;
+}
+
+p{
+font-size: 0.750rem;
+}
+
+
+
+
+/* Sections repères */
+
+Header {
+    background-color: aliceblue
+}
+
+#recherche {
+   background-color: aliceblue 
+}
+
+#articles {
+   background-color: aliceblue 
+}
+
+main {
+    border: solid red;
+}
+
+aside {
+    border: solid red;
+}
+
+#activites {
+   background-color: aliceblue 
+}
+
+.full {
+    border: solid green;
+}
+
+.list{
+    border: solid green;
+}
+
+
+footer {
+   background-color: aliceblue 
+}
