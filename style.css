@@ -1,11 +1,13 @@
-/* * {
+* {
+    list-style: none;
+    text-decoration: none;
     margin: 0;
-} */
+}
 
+/*Général */
 body {
 font-family: 'Raleway', sans-serif;
 }
-
 
 h1, h2 {
 font-size: 1rem;
@@ -17,8 +19,34 @@ font-size: 0.875rem;
 
 p{
 font-size: 0.750rem;
+color:#000000;
 }
 
+/*Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header > nav > ul{
+    display: flex;
+}
+
+header > nav > ul > li {
+    padding: 10px;
+    justify-content: flex-end;
+    border-top: 0.2rem solid #FFFFFF;
+}
+
+header > nav > ul > li:hover {
+    border-top: 0.2rem solid #0065FC;
+
+}
+
+header > nav > ul > li > a > p:hover {
+    color: #0065FC;     
+}
 
 
 
