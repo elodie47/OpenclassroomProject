@@ -20,18 +20,57 @@
         </nav>
         
     </header>
-    <!-- Section 1 Recherche-->
-    <section id="recherche">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <imput type="search"><i class="fas fa-map-marker-alt"></i>Marseille, France<imput type="bouton">Recherche</imput></imput>
-        <imput type="checkout"></imput>
-        <p>FILTRE ?</p>
-        <p>Plus de 500 logement sont disponible dans cette ville</p>
-    </section>
-    <!-- Section 2 Articles -->
-    <main id="articles">
-        <section>
+    <!-- Main -->
+    <main >
+        <!-- Section 1 Recherche-->
+        <section id="recherche">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+
+            <form method="post" action="traitement.php">
+                <div class="search-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" id="site-search" placeholder="Marseille, France" name="q"
+           aria-label="Search through site content">
+                    <button>Recherche</button>
+                </div>
+            </form>
+            <div>
+                <h3>Filtres</h3>
+            <ul>
+                <li>
+                   <a href="">
+                        <div><i class="fas-2 fas fa-money-bill-wave"></i></div>
+                        <p><b>Economique</b></p>
+                    </a>
+                </li>
+                <li>
+                   <a href="">
+                        <div><i class="fas-2 fas fa-child"></i></div>
+                        <p><b>Familial</b></p>
+                    </a>
+                </li>
+                <li>
+                   <a href="">
+                        <div><i class="fas-2 fas fa-heart"></i></div>
+                        <p><b>Romantique</b></p>
+                    </a>
+                </li>
+                <li>
+                   <a href="">
+                        <div><i class="fas-2 fas fa-dog"></i></div>
+                       <p><b>Animaux autorisés</b></p>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <div>
+                <i class="fas-2 fas fa-info"></i>
+                <p>Plus de 500 logement sont disponible dans cette ville</p>
+            </div>
+        </section>
+        <!-- Section 2 Articles -->
+        <section id="articles">
             <h2>Hébergement à Marseille</h2>
             <div>
                 <a href="">
@@ -81,6 +120,7 @@
             </div>
             <p></p>
         </section>
+        <!-- Section 3 Les plus populaires -->
         <aside>
             <h2>Les plus populaires</h2>
             <a href="">
@@ -105,55 +145,55 @@
                 </article>
             </a>
         </aside>
+        <!-- Section 4 Activités -->
+        <section id="activites">
+           <h1>Activités à Marseille</h1> 
+           <div class="full">
+               <a href="">
+                   <article>
+                       <img src="" alt="">
+                       <h3>Vieux Port</h3>
+                   </article>
+               </a>
+           </div>
+           <div class="list">
+               <a href="">
+                   <article>
+                       <img src="" alt="">
+                       <h3>Fort ede Pomègues</h3>
+                   </article>
+               </a>
+               <a href="">
+                   <article>
+                       <img src="" alt="">
+                       <h3>Iles du Frioul</h3>
+                   </article>
+               </a>
+           </div>
+           <div class="full">
+               <a href="">
+                   <article>
+                       <img src="" alt="">
+                       <h3>Parc National des Calanques</h3>
+                   </article>
+               </a>
+           </div>
+           <div class="list">
+               <a href="">
+                   <article>
+                       <img src="" alt="">
+                       <h3>Notre-Dame-de-la-Garde</h3>
+                   </article>
+               </a>
+               <a href="">
+                   <article>
+                       <img src="" alt="">
+                       <h3>Parc Longchamp</h3>
+                   </article>
+               </a>
+           </div>
+        </section>
     </main>
-    <!-- Section 3 Activités -->
-    <section id="activites">
-       <h1>Activités à Marseille</h1> 
-       <div class="full">
-           <a href="">
-               <article>
-                   <img src="" alt="">
-                   <h3>Vieux Port</h3>
-               </article>
-           </a>
-       </div>
-       <div class="list">
-           <a href="">
-               <article>
-                   <img src="" alt="">
-                   <h3>Fort ede Pomègues</h3>
-               </article>
-           </a>
-           <a href="">
-               <article>
-                   <img src="" alt="">
-                   <h3>Iles du Frioul</h3>
-               </article>
-           </a>
-       </div>
-       <div class="full">
-           <a href="">
-               <article>
-                   <img src="" alt="">
-                   <h3>Parc National des Calanques</h3>
-               </article>
-           </a>
-       </div>
-       <div class="list">
-           <a href="">
-               <article>
-                   <img src="" alt="">
-                   <h3>Notre-Dame-de-la-Garde</h3>
-               </article>
-           </a>
-           <a href="">
-               <article>
-                   <img src="" alt="">
-                   <h3>Parc Longchamp</h3>
-               </article>
-           </a>
-       </div>
-    </section>
     <!-- Footer -->
     <footer>
         <div>
