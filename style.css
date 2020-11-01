@@ -8,6 +8,7 @@
 /*Général */
 body {
 font-family: 'Raleway', sans-serif;
+    margin: 0px 40px;
 }
 
 h1, h2 {
@@ -25,6 +26,12 @@ color:#000000;
 
 .fas-2 {
     color: #0065FC;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /*Header */
@@ -78,7 +85,7 @@ header > nav > ul > li > a > p:hover {
 }
 
 #recherche > form > div > input {
-  padding: 10px;
+  padding: 11px;
   border: none;
   border-top: solid 2px #f2f2f2;
   border-bottom: solid 2px #f2f2f2;
@@ -171,28 +178,70 @@ header > nav > ul > li > a > p:hover {
 }
 
 
+/*Hébergements */
 
+#contenu-main{
+    display: flex;
+}
 
+#hebergements {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 12px;
+    
+}
 
+#hebergements > div {
+    display: flex;
+    margin: 10px 0;
+    
+}
+
+#hebergements > div > article {
+    margin-right: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+#hebergements > div > article > a > div > img {
+    border-radius: 20px 20px 0px 0px;
+    padding: 5px;
+}
+
+ .card-text{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/*populaires */
+
+#populaires {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+#populaires > div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+#populaires > div > articles {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 12px;
+    
+}
 
 
 /* Sections repères */
 
-Header {
-    background-color: aliceblue
-}
-
-#recherche {
-   /*background-color: aliceblue */
-}
-
-#articles {
-   background-color: aliceblue 
-}
-
-main {
-    border: solid red;
-}
 
 aside {
     border: solid red;
