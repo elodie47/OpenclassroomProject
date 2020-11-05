@@ -36,26 +36,19 @@ img {
     height: auto;
 }
 
-.card-img {
-    position: relative;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 1rem 1rem 0rem 0rem;
-    margin: 5px;
-}
-
-.card-img > img {
-    height: 100%;
-    width: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+figure > a > img {
     -o-object-fit: cover;
 	object-fit: cover;
 	border-radius: 1rem 1rem 0 0;
+    height: 10em;
 }
+
+figure > a {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
 
 /*Header */
 
@@ -242,6 +235,8 @@ header > nav > ul > li > a > p:hover {
 	transition: transform 0.5s ease;
     flex-grow: 1;
     margin: 0px 30px;
+    width: 1em;
+    height: 15em;
 }
 
 .card:first-child, .card:last-child{
