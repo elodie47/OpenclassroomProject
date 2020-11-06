@@ -26,44 +26,23 @@ font-size: 0.750rem;
 color:#000000;
 }
 
-.fas-2 {
-    color: #0065FC;
-}
-
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-
-.display-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.display-flex-nowrap {
-    display: flex;
-}
-
-.display-flex-row {
-    display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap;   
-}
-
-.display-flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 /*Header */
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
 
 header > img {
 	display: block;
 	width: auto;
+}
+
+Header > nav > ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header > nav > ul > li {
@@ -89,8 +68,12 @@ header > nav > ul > li > a > p:hover {
 /*Recherche */
 
 #recherche > p {
-    margin-top: 7px;
+    margin-top: 7px; 
 }
+
+#recherche > div > h3 {
+    margin-top: 20px;
+} 
 
 #recherche > form > div {
   margin-top: 10px;
@@ -99,6 +82,19 @@ header > nav > ul > li > a > p:hover {
   border: none;
   cursor: pointer;  
   border-radius: 10px;
+}
+
+#recherche > div > ul > li > a > div > i,
+#recherche > div > i {
+    color: #0065FC;
+}
+
+#recherche > div > i {
+    font-size: 10px;
+    }
+
+#recherche > div > ul > li:first-child {
+    margin-left: 0px;
 }
 
 #recherche > form > div > i {
@@ -117,7 +113,7 @@ header > nav > ul > li > a > p:hover {
   margin-left: -4px;
 }
 
-#recherche > form > div > button {
+#recherche > form > div > input:last-child {
   cursor: pointer;   
   background-color: #0065FC;
   border: none;
@@ -125,12 +121,16 @@ header > nav > ul > li > a > p:hover {
   transition: background 0.5s;
 }
 
-#recherche > form > div > button:hover {
+#recherche > form > div > input:last-child:hover {
     opacity: 0.8;
 }
 
 /*Recherche > Filtre */
 
+#recherche > div > ul, #recherche > div > ul > li > a, #recherche > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #recherche > div > h3 {
     align-self: center;
@@ -181,9 +181,9 @@ header > nav > ul > li > a > p:hover {
     align-items: center;
     border: solid 2px #d9d9d9;
     border-radius: 100%;
-	min-height: 1.5rem;
-	min-width: 1.5rem;
     margin-right: 10px;
+    min-height: 1.5rem;
+	min-width: 1.5rem;
 }
 
 #recherche > div > p {
@@ -191,6 +191,18 @@ header > nav > ul > li > a > p:hover {
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+/*Conteneur articles */
+
+#contenu-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 
 /*Hébergements */
@@ -206,9 +218,30 @@ header > nav > ul > li > a > p:hover {
 #hebergements > div {
     margin: 30px 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     
+}
+
+#hebergements > div > figure {
+    height: 16%;
+    width: 1em;
+}
+
+#hebergements > div > figure > a {
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+#hebergements > div > figure > a > img {
+    -o-object-fit: revert;
+	object-fit: revert;
+	border-radius: 1rem 1rem 0 0;
+    padding: 0.4em;
+    width: 100%;
+}
+
+
+#hebergements > div > figure > a > figcaption {
+    padding: 0.4em;
 }
 
 .card {
@@ -218,8 +251,6 @@ header > nav > ul > li > a > p:hover {
 	transition: transform 0.5s ease;
     flex-grow: 1;
     margin: 0px 30px;
-    width: 1em;
-    height: 15em;
 }
 
 .card:first-child, .card:last-child{
@@ -235,26 +266,27 @@ header > nav > ul > li > a > p:hover {
 	text-decoration: none;
 }
 
-#hebergements > div> figure > a > img {
-    -o-object-fit: cover;
-	object-fit: cover;
-	border-radius: 1rem 1rem 0 0;
-    height: 10em;
-    padding: 0.4em;
-}
-
-#hebergements > div > figure > a {
-    border-radius: 1rem 1rem 0rem 0rem;
-}
-
-
-#hebergements > div > figure > a > figcaption {
-    padding: 0.4em;
-}
-
 
 
 /*populaires */
+
+#populaires > div > figure {
+    width: 100%;
+    margin: 25px 0px 10px 0px;
+}
+
+
+#populaires > div > figure > a > img {
+    object-fit: revert;
+    padding: 0.4em;
+    width: 50%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+#populaires > div > figure > a > figcaption {
+    padding: 0.4em;
+}
+
 
 #populaires {
     background-color: #f2f2f2;
@@ -266,44 +298,59 @@ header > nav > ul > li > a > p:hover {
     width: 1em;
 }
 
-.card-right {
-	background: #fffFFF;
-	border-radius: 1rem;
-	box-shadow: 0 0 10px #0000002e;
-	transition: transform 0.5s ease;
-    flex-grow: 1;
+#populaires > div:first-child {
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+#populaires > div > figure > a {
+    display: flex;
+}
+    
+/* Activité */
+
+#activites > h1 {
+    margin-top: 30px;
+}
+
+#activites > div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#activites > div > div > figure > a > img {
+    height: 12em;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0rem;
+}
+
+.list {
+    flex-direction: column;
     margin: 0px 30px;
-    width: 1em;
-    height: em;
-    
 }
 
-.card-right:hover {
-	transform: scale(1.05); /* Agrandi les cartes au survol */
+.list > figure:last-child {
+    margin: 29px 0px;
 }
 
-.card-right a {
-	color: #000000;
-	text-decoration: none;
-}
-    
-    
-/* Sections repères */
-
-
-#activites {
-   background-color: aliceblue 
+.full > figure {
+    height: 28.3em;
 }
 
-.full {
-    border: solid green;
-}
 
-.list{
-    border: solid green;
-}
+/* footer */
 
 
 footer {
-   background-color: aliceblue 
+   display:flex;
+   justify-content: space-between;  
+   background-color: #f2f2f2;
+   padding: 50px;
+    margin-top: 50px;
+}
+
+footer > div:last-child {
+    margin-right: 110px;
 }
