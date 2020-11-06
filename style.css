@@ -36,34 +36,34 @@ img {
     height: auto;
 }
 
-figure > a > img {
-    -o-object-fit: cover;
-	object-fit: cover;
-	border-radius: 1rem 1rem 0 0;
-    height: 10em;
+
+.display-flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-figure > a {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem 1rem 0rem 0rem;
+.display-flex-nowrap {
+    display: flex;
 }
+
+.display-flex-row {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;   
+}
+
+.display-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /*Header */
 
-header {
-    display: flex;
-    justify-content: space-between;
-}
-
 header > img {
 	display: block;
 	width: auto;
-}
-
-header > nav > ul{
-    display: flex;
 }
 
 header > nav > ul > li {
@@ -132,16 +132,11 @@ header > nav > ul > li > a > p:hover {
 /*Recherche > Filtre */
 
 
-#recherche > div {
-    display: flex;
-}
-
 #recherche > div > h3 {
     align-self: center;
 }
 
 #recherche > div > ul {
-    display: flex;
     padding: 0px;
 }
 
@@ -151,7 +146,6 @@ header > nav > ul > li > a > p:hover {
 }
 
 #recherche > div > ul > li > a {
-    display: flex;
     border: solid 2px #d9d9d9;
     border-radius: 100px;
     transition: background 0.5s;
@@ -181,10 +175,6 @@ header > nav > ul > li > a > p:hover {
 /*Recherche > Result */
 
 
-#recherche > div {
-    display: flex;
-}
-
 #recherche > div > i {
     display: flex;
     justify-content: center;
@@ -204,13 +194,6 @@ header > nav > ul > li > a > p:hover {
 
 
 /*Hébergements */
-
-#contenu-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
 
 #hebergements {
     background-color: #f2f2f2;
@@ -252,6 +235,23 @@ header > nav > ul > li > a > p:hover {
 	text-decoration: none;
 }
 
+#hebergements > div> figure > a > img {
+    -o-object-fit: cover;
+	object-fit: cover;
+	border-radius: 1rem 1rem 0 0;
+    height: 10em;
+    padding: 0.4em;
+}
+
+#hebergements > div > figure > a {
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+
+#hebergements > div > figure > a > figcaption {
+    padding: 0.4em;
+}
+
 
 
 /*populaires */
@@ -263,24 +263,31 @@ header > nav > ul > li > a > p:hover {
     margin-top: 20px;
     flex-grow: 1;
     margin-left: 10px;
+    width: 1em;
 }
 
-#populaires > div {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-
-}
-
-#populaires > div > articles {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 30px;
-    margin-top: 12px;
+.card-right {
+	background: #fffFFF;
+	border-radius: 1rem;
+	box-shadow: 0 0 10px #0000002e;
+	transition: transform 0.5s ease;
+    flex-grow: 1;
+    margin: 0px 30px;
+    width: 1em;
+    height: em;
     
 }
 
+.card-right:hover {
+	transform: scale(1.05); /* Agrandi les cartes au survol */
+}
 
+.card-right a {
+	color: #000000;
+	text-decoration: none;
+}
+    
+    
 /* Sections repères */
 
 
