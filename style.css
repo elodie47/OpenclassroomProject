@@ -1,7 +1,7 @@
 * {
     list-style: none;
     text-decoration: none;
-    margin: 0px;
+    margin: 0em;
     box-sizing: border-box;
 }
 
@@ -10,20 +10,21 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 header,main{
-    margin: 0px 40px;
+    margin: 0em 4em;
 }
 
 h1, h2 {
-font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 h3 {
-font-size: 0.875rem;
+    font-size: 0.875rem;
+    color: #000000;
 }
 
 p{
-font-size: 0.750rem;
-color:#000000;
+    font-size: 0.90rem;
+    color:#000000;
 }
 
 
@@ -46,19 +47,18 @@ Header > nav > ul {
 }
 
 header > nav > ul > li {
-    padding: 35px;
-    padding-top: 30px;
+    padding: 2em;
     justify-content: flex-end;
     border-top: 0.2rem solid #FFFFFF;
-}
-
-header > nav > ul > li > a > p > b {
-    color: #0065FC; 
 }
 
 header > nav > ul > li:hover {
     border-top: 0.2rem solid #0065FC;
 
+}
+
+header > nav > ul > li > a > p > b {
+    color: #0065FC; 
 }
 
 header > nav > ul > li > a > p:hover {
@@ -67,58 +67,60 @@ header > nav > ul > li > a > p:hover {
 
 /*Recherche */
 
-#recherche > p {
-    margin-top: 7px; 
+#recherche {
+    margin-top: 1em;
 }
 
-#recherche > div > h3 {
-    margin-top: 20px;
-} 
+#recherche > p {
+    margin-top: 0.4em; 
+}
 
 #recherche > form > div {
-  margin-top: 10px;
-  width: 285px;
-  background: #0065FC;
-  border: none;
+  margin-top: 1em;
   cursor: pointer;  
-  border-radius: 10px;
-}
-
-#recherche > div > ul > li > a > div > i,
-#recherche > div > i {
-    color: #0065FC;
-}
-
-#recherche > div > i {
-    font-size: 10px;
-    }
-
-#recherche > div > ul > li:first-child {
-    margin-left: 0px;
+  border-radius: 1em;
 }
 
 #recherche > form > div > i {
-  background-color: #f2f2f2 ;
-  padding: 11px 13px 14px 11px;
-  border-radius: 9px 0px 0px 9px;
-  justify-content: center;
-  align-items: center;
+   background-color: #f2f2f2;
+   padding: 1em;
+   border-radius: 1em 0em 0em 1em;
+   justify-content: center;
+   align-items: center;
 }
 
 #recherche > form > div > input {
-  padding: 11px;
-  border: none;
-  border-top: solid 2px #f2f2f2;
-  border-bottom: solid 2px #f2f2f2;
-  margin-left: -4px;
+    padding: 1em;
+    padding-top: 1.2em;
+    border: none;
+    border-radius: 0em;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 0.1em #f2f2f2;
+    border-bottom: solid 0.1em #f2f2f2;
+    margin-left: -0.3em;
+}
+
+#site-search::placeholder {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#site-search{
+    padding-top: 1.2em;
+    width: 17em;
 }
 
 #recherche > form > div > input:last-child {
-  cursor: pointer;   
-  background-color: #0065FC;
-  border: none;
-  color: #FFFFFF;
-  transition: background 0.5s;
+    font-weight: 500;
+    padding: 0.9em;
+    font-size: 1rem;
+    color: #FFFFFF;
+    cursor: pointer;   
+    background-color: #0065FC;
+    border-radius: 0em 1em 1em 0em;
+    transition: background 0.5s;
 }
 
 #recherche > form > div > input:last-child:hover {
@@ -127,27 +129,37 @@ header > nav > ul > li > a > p:hover {
 
 /*Recherche > Filtre */
 
+#recherche > div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+#recherche > div > h3 {
+    align-self: center;
+} 
+
+#recherche > div > ul > li > a > div > i,
+#recherche > div > i {
+    color: #0065FC;
+}
+
 #recherche > div > ul, #recherche > div > ul > li > a, #recherche > div:last-child {
     display: flex;
     flex-wrap: wrap;
 }
 
-#recherche > div > h3 {
-    align-self: center;
-}
-
-#recherche > div > ul {
-    padding: 0px;
-}
-
 #recherche > div > ul > li {
-    margin: 20px;
-    margin-right: 5px;
+    margin: 1em;
+}
+
+#recherche > div > ul > li:first-child {
+    margin-left: 0em;
 }
 
 #recherche > div > ul > li > a {
-    border: solid 2px #d9d9d9;
-    border-radius: 100px;
+    border: solid 0.1em #d9d9d9;
+    border-radius: 2em;
     transition: background 0.5s;
 }
 #recherche > div > ul > li > a:hover {
@@ -158,32 +170,35 @@ header > nav > ul > li > a > p:hover {
 
 #recherche > div > ul > li > a > div  {
     background-color:#deebff; 
-    padding: 6px;
+    padding: 1em;
     border-radius: 100%;
-    width: 37px;
-    height: 37px;
+    width: 2.5em;
+    height: 2.5em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #recherche > div > ul > li > a > p  {
-    padding: 0 20px;
+    padding: 0 1em;
     align-self: center;
 }
 
 /*Recherche > Result */
 
+#recherche > div > i {
+    font-size: 0.6em;
+}
 
 #recherche > div > i {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 2px #d9d9d9;
+    border: solid 0.1em #d9d9d9;
     border-radius: 100%;
-    margin-right: 10px;
+    margin-right: 1em;
     min-height: 1.5rem;
-	min-width: 1.5rem;
+    min-width: 1.5rem;
 }
 
 #recherche > div > p {
@@ -200,7 +215,7 @@ header > nav > ul > li > a > p:hover {
 #contenu-main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: 2em;
 }
 
 
@@ -209,93 +224,82 @@ header > nav > ul > li > a > p:hover {
 
 #hebergements {
     background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 30px;
-    margin-top: 20px;
-    flex-grow: 2;
+    border-radius: 1em;
+    padding: 2em;
+    width: 67%;
 }
 
 #hebergements > div {
-    margin: 30px 0;
+    margin: 1.5em 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    
 }
 
-#hebergements > div > figure {
-    height: 16%;
-    width: 1em;
-}
-
-#hebergements > div > figure > a {
-    border-radius: 1rem 1rem 0rem 0rem;
-}
-
-#hebergements > div > figure > a > img {
-    -o-object-fit: revert;
-	object-fit: revert;
-	border-radius: 1rem 1rem 0 0;
+#hebergements > div > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #00000014;
+    transition: transform 0.5s ease;
+    flex-grow: 1;
+    width: 14em;
+    height: 11em;
     padding: 0.4em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#hebergements > div > a > figure:hover {
+	transform: scale(1.05); /* Agrandi les cartes au survol */ 
+}
+
+#hebergements > div > a > figure > div > img {
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    height: 6em;
     width: 100%;
 }
 
 
-#hebergements > div > figure > a > figcaption {
-    padding: 0.4em;
+#hebergements > div > a > figure > figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+    align-content: space-around;
+    height: 100%;
 }
 
-.card {
-	background: #fffFFF;
-	border-radius: 1rem;
-	box-shadow: 0 0 10px #0000002e;
-	transition: transform 0.5s ease;
-    flex-grow: 1;
-    margin: 0px 30px;
+#hebergements > div > a > figure > figcaption > span {
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
+    padding: 0.3em 0em;
 }
 
-.card:first-child, .card:last-child{
-    margin: 0px 0px;
+#hebergements > div > a > figure > figcaption > span, #hebergements > div > a > figure > figcaption > p, #hebergements > div > a > figure > figcaption > h3 {
+    padding: 0.1em 0em;
 }
 
-.card:hover {
-	transform: scale(1.05); /* Agrandi les cartes au survol */
+#hebergements > div > a > figure > figcaption > span > i {
+    font-size: 0.6em;
+    padding: 0.5em 0em;
 }
 
-.card a {
-	color: #000000;
-	text-decoration: none;
+#hebergements > p > a {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
 }
-
-
 
 /*populaires */
 
-#populaires > div > figure {
-    width: 100%;
-    margin: 25px 0px 10px 0px;
-}
-
-
-#populaires > div > figure > a > img {
-    object-fit: revert;
-    padding: 0.4em;
-    width: 50%;
-    border-radius: 1rem 0 0 1rem;
-}
-
-#populaires > div > figure > a > figcaption {
-    padding: 0.4em;
-}
-
-
 #populaires {
     background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 30px;
-    margin-top: 20px;
-    flex-grow: 1;
-    margin-left: 10px;
-    width: 1em;
+    border-radius: 1em;
+    padding: 2em;
+    margin-left: 2em;
+    width: 30%;
 }
 
 #populaires > div:first-child {
@@ -303,40 +307,110 @@ header > nav > ul > li > a > p:hover {
     justify-content: space-between; 
 }
 
+#populaires > div > a > figure {
+  background: #fffFFF;
+  border-radius: 1rem;
+  box-shadow: 0 0 1em #0000002e;
+  transition: transform 0.5s ease;
+  flex-grow: 1;
+  margin: 1.5em 0em 1em 0em;
+  padding: 0.4em;
+  display: flex;
+  height: 7.4em;
+}
 
-#populaires > div > figure > a {
+#populaires > div > a > figure:hover {
+	transform: scale(1.05); /* Agrandi les cartes au survol */ 
+}
+
+#populaires > div > a > figure > div {
+    width: 40%;
+}
+
+#populaires > div > a > figure > div > img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    width: 7em;
+}
+
+
+#populaires > div > a > figure > figcaption {
+    padding: 0.9em;
+}
+
+#populaires > div > a > figure > figcaption > p {
+    font-size: 0.8rem;
+    padding: 1em 0em;   
+}
+
+#populaires > div > a > figure > figcaption > span {
     display: flex;
+    flex-direction: row;
+    color: #0065FC;
+}
+
+#populaires > div > a > figure > figcaption > span {
+    font-size: 0.6em;
+    padding: 0.5em 0em;
 }
     
 /* Activité */
 
 #activites > h1 {
-    margin-top: 30px;
+    margin-top: 2em;
 }
 
 #activites > div {
     display: flex;
+    margin-top: 1.5em;
     justify-content: space-between;
-    margin-top: 30px;
-}
-
-#activites > div > div > figure > a > img {
-    height: 12em;
-    width: 100%;
-    border-radius: 1rem 1rem 0 0rem;
 }
 
 .list {
     flex-direction: column;
-    margin: 0px 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.list > figure:last-child {
-    margin: 29px 0px;
+.full > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: 23em;
+    width: 16em;
 }
 
-.full > figure {
-    height: 28.3em;
+.list > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: calc(20em / 2);
+    width: 16em;
+}
+
+.list > a > figure:hover, .full > a > figure:hover  {
+	transform: scale(1.05); /* Agrandi les cartes au survol */ 
+}
+
+.full > a > figure > div > img {
+    border-radius: 1rem 1rem 0 0rem;
+    object-fit: cover;
+    height: 20em;
+    width: 100%;
+}
+
+.list > a > figure > div > img {
+    border-radius: 1rem 1rem 0 0rem;
+    object-fit: cover;
+    height: 7em;
+    width: 100%;
+}
+
+.full > a > figure > figcaption > h3, .list > a > figure > figcaption > h3 {
+    padding: 1em;   
 }
 
 
@@ -344,13 +418,21 @@ header > nav > ul > li > a > p:hover {
 
 
 footer {
-   display:flex;
-   justify-content: space-between;  
-   background-color: #f2f2f2;
-   padding: 50px;
-    margin-top: 50px;
+   display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 3em 4.3em;
+    margin-top: 4em;
 }
 
 footer > div:last-child {
-    margin-right: 110px;
+    margin-right: 6em;
+}
+
+footer > div > p {
+    padding: 0.3em 0em;
+}
+
+footer > div > h4 {
+    margin-bottom: 1em;
 }
