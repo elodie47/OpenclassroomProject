@@ -269,6 +269,7 @@ header > span > ul > li > a > p:hover {
     background-color: #f2f2f2;
     border-radius: 1em;
     padding: 2em;
+    margin-right: 1em;
 }
 
 #hebergements > div {
