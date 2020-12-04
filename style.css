@@ -47,7 +47,7 @@ Header > nav > ul {
 }
 
 header > nav > ul > li {
-    padding: 2em;
+    padding: 1.5em;
     justify-content: flex-end;
     border-top: 0.2rem solid #FFFFFF;
 }
@@ -65,6 +65,35 @@ header > nav > ul > li > a > p:hover {
     color: #0065FC;     
 }
 
+header > span {
+    width: 100%;
+    margin-bottom: 2em;
+}
+header > span > ul {
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+}
+
+header > span > ul > li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.2rem solid #F2F2F2;
+}
+
+header > span > ul > li:hover {
+    border-bottom: 0.2rem solid #0065FC;
+    color: #0065FC;
+}
+
+header > span > ul > li > a > p {
+    padding: 1em;
+}
+
+header > span > ul > li > a > p:hover {
+    color: #0065FC;
+}
+
 /*Recherche */
 
 #recherche {
@@ -79,6 +108,8 @@ header > nav > ul > li > a > p:hover {
   margin-top: 1em;
   cursor: pointer;  
   border-radius: 1em;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 #recherche > form > div > i {
@@ -93,12 +124,10 @@ header > nav > ul > li > a > p:hover {
     padding: 1em;
     padding-top: 1.2em;
     border: none;
-    border-radius: 0em;
     justify-content: center;
     align-items: center;
     border-top: solid 0.1em #f2f2f2;
     border-bottom: solid 0.1em #f2f2f2;
-    margin-left: -0.3em;
 }
 
 #site-search::placeholder {
@@ -112,10 +141,8 @@ header > nav > ul > li > a > p:hover {
     width: 17em;
 }
 
-#recherche > form > div > input:last-child {
+#search-desktop {
     font-weight: 500;
-    padding: 0.9em;
-    font-size: 1rem;
     color: #FFFFFF;
     cursor: pointer;   
     background-color: #0065FC;
@@ -123,9 +150,24 @@ header > nav > ul > li > a > p:hover {
     transition: background 0.5s;
 }
 
-#recherche > form > div > input:last-child:hover {
+#search-desktop:hover {
     opacity: 0.8;
 }
+
+    #recherche > form > div > button {
+    padding: 0.9em;
+    color: #FFFFFF;
+    cursor: pointer;   
+    background-color: #0065FC;
+    border-radius: 1em 1em 1em 1em;
+    width: 4em;
+    transition: background 0.5s;
+    border-color: #0065FC;
+    }
+
+    #recherche > form > div > button:hover {
+    opacity: 0.8;
+    }
 
 /*Recherche > Filtre */
 
@@ -304,7 +346,7 @@ header > nav > ul > li > a > p:hover {
 
 #populaires > div:first-child {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
 }
 
 #populaires > div > a > figure {
@@ -437,12 +479,38 @@ footer > div > h4 {
     margin-bottom: 1em;
 }
 
-/*Responsive */
+/*Responsive - Masquer la recherche mobile*/
 
+@media (min-width: 601px) {
+    
+#recherche > form > div > button {
+    display: none;
+    }
+
+
+header > span > ul {
+    display: none;
+}
+
+}
+    
+/*Responsive - mobile*/
 @media (max-width: 600px) {
     
-    Header > nav {
+    header, main {
+    margin: 0em 0em;
+    }
+    
+    header > img {
+    margin-left: 1em;
+    }
+    
+    header > nav > ul > li {
     display: none;
+    }
+    
+    header > nav > ul > li:last-child{
+    display: block;
     }
     
     #recherche {
@@ -450,7 +518,7 @@ footer > div > h4 {
     }
     
     #recherche > div {
-        display: inline-block;
+    display: inline-block;
     }
     
     #recherche > div > ul > li {
@@ -465,13 +533,15 @@ footer > div > h4 {
     flex-wrap: nowrap;
     }
     
-    header, main {
-    margin: 0em 1em;
+    #recherche > form > div > input {
+    width: 14em;
     }
     
-    #header, main {
-    margin: 0em;
-}
+    #search-desktop{
+    display: none;
+    }
+
+    
     #contenu-main {
     flex-wrap: wrap;
     }
@@ -481,6 +551,7 @@ footer > div > h4 {
     border-radius: 0em;
     background-color: #ffffff;
     order: 1; 
+    width: 100%;
     }
     
     #hebergements > div {
@@ -495,10 +566,12 @@ footer > div > h4 {
     border-radius: 0em;
     padding: 1em;
     order: 0; /*Défaut is 1*/
+    width: 100%;
     }
     
     #activites {
     padding: 0em 1em;
+    width: 100%;
     }
     
     #activites > div {
