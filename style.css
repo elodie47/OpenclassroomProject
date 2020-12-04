@@ -461,7 +461,7 @@ header > span > ul > li > a > p:hover {
 
 footer {
    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #f2f2f2;
     padding: 3em 4.3em;
     margin-top: 3em;
@@ -513,18 +513,7 @@ header > span > ul {
     display: block;
     }
     
-    #recherche {
-    margin: 0 1em;
-    }
-    
-    #recherche > div {
-    display: inline-block;
-    }
-    
-    #recherche > div > ul > li {
-    margin: 0.5em 0.5em 0em 0em;
-    }
-    
+    /*recherche*/
     #recherche > div > ul, #recherche > div > ul > li > a, #recherche > div:last-child {
     padding: 0em;
     }
@@ -539,6 +528,19 @@ header > span > ul {
     
     #search-desktop{
     display: none;
+    }
+    
+    /*filtres*/
+    #recherche {
+    margin: 0 1em;
+    }
+    
+    #recherche > div {
+    display: inline-block;
+    }
+    
+    #recherche > div > ul > li {
+    margin: 0.5em 0.5em 0em 0em;
     }
 
     
@@ -604,5 +606,201 @@ header > span > ul {
     }
     
 }
+
+/*Responsive - tablette 768px*/
+@media (max-width: 768px) and (min-width: 600px) {
+    
+    header, main {
+    margin: 0em 1em;
+    }
+    
+    /*filtres*/
+    #recherche {
+    margin: 0 1em;
+    }
+    
+    #recherche > div {
+    display: inline-block;
+    }
+    
+    #recherche > div > ul > li {
+    margin: 0.5em 0.5em 0em 0em;
+    }
+    
+    #recherche > div > ul, #recherche > div > ul > li > a, #recherche > div:last-child {
+    padding: 0em;
+    }
+    
+    #recherche > div:last-child {
+    flex-wrap: nowrap;
+    }
+    
+    #contenu-main {
+    flex-wrap: wrap;
+    }
+    
+    #hebergements > div {
+    width: 100%;   
+    }
+    
+    #hebergements > div > a > figure {
+    width: 13em;
+    }
+    
+    #populaires {
+    width: 100%;
+    margin-top: 1em;
+    }
+        
+    #populaires > div > a > figure > div > img {
+    width: 16em;   
+    }
+    
+    #populaires > div > a > figure {
+    height: 11.4em;
+    }
+    
+    #activites > div {
+    flex-wrap: wrap;
+    }
+    
+    .full{
+    margin-bottom: 1em;  
+    }
+    
+    .full > a > figure {
+    width: 46em;
+    }
+    
+    .list {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em; 
+    width: 100%;
+    }
+    
+    .list > a > figure {
+    height: calc(26em / 2);
+    width: 22em;
+    }
+    
+    .list > a > figure > div > img {
+    height: 10em;    
+    }
+    
+    footer {
+    padding: 3em 1.3em;    
+    }   
+}
+
+
+/*Responsive - desktop 1024px*/
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    header, main {
+    margin: 0em 1em;
+    }
+    
+    #hebergements {
+    margin-right: 1em;
+    }
+    
+    #hebergements > div {
+    width: 35em;
+    }
+    
+    #hebergements > div > a > figure {
+    width: 16.5em;
+    }
+    
+    #activites > div {
+    flex-wrap: wrap;
+    }
+    
+    .list > a > figure {
+    width: 14em;    
+    }
+    
+    .full > a > figure {
+    width: 15em;   
+    }
+}
+
+Responsive - Laptop 1440px
+@media (max-width: 1439px) and (min-width: 1025px) {
+    #hebergements > div {
+    width: 48em;  
+    }
+    
+    .full > a > figure {
+    width: 21em;
+    }
+}   
+
+
+/*Responsive - HD 1920px*/
+@media (max-width: 1920px) and (min-width: 1441px) {
+    #hebergements > div {
+    width: 75em;
+    }
+    #hebergements > div > a > figure {
+    width: 24em;
+    height: 15em;
+    }
+    
+    #hebergements > div > a > figure > div > img {
+    height: 10em;
+    }
+    
+    #populaires > div > a > figure {
+    height: 9.4em;
+    }
+    
+    #populaires > div > a > figure > div > img {
+    width: 10em;    
+    }
+    
+    .full > a > figure {
+    width: 25em; 
+    height: 29.5em;
+    }
+    
+    .list > a > figure {
+    width: 29em;
+    height: calc(28em / 2);
+    }
+    
+    .list > a > figure > div > img {
+    height: 11em;    
+    }
+    
+    .full > a > figure > div > img {
+    height: 26em;   
+    }
+}
+
+
+/*Responsive - 4k*/
+@media (min-width: 2560px) {
+    #hebergements > div {
+    width: 118em;   
+    }
+    
+    #hebergements > div > a > figure {
+    width: 38em;
+    height: 18em;
+    }
+    #hebergements > div > a > figure > div > img {
+    height: 12em;   
+    }
+        
+    .full > a > figure {
+    width: 40em;     
+    }
+    .list > a > figure {
+    width: 33em; 
+}
+
 
 
