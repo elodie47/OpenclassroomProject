@@ -65,32 +65,32 @@ header > nav > ul > li > a > p:hover {
     color: #0065FC;     
 }
 
-header > span {
+header > div {
     width: 100%;
     margin-bottom: 2em;
 }
-header > span > ul {
+header > div > ul {
     display: flex;
     padding: 0px;
     justify-content: space-around;
 }
 
-header > span > ul > li {
+header > div > ul > li {
     width: 100%;
     text-align: center;
     border-bottom: 0.2rem solid #F2F2F2;
 }
 
-header > span > ul > li:hover {
+header > div > ul > li:hover {
     border-bottom: 0.2rem solid #0065FC;
     color: #0065FC;
 }
 
-header > span > ul > li > a > p {
+header > div > ul > li > a > p {
     padding: 1em;
 }
 
-header > span > ul > li > a > p:hover {
+header > div > ul > li > a > p:hover {
     color: #0065FC;
 }
 
@@ -239,8 +239,8 @@ header > span > ul > li > a > p:hover {
     border: solid 0.1em #d9d9d9;
     border-radius: 100%;
     margin-right: 1em;
-    min-height: 1.5rem;
-    min-width: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 #recherche > div > p {
@@ -330,6 +330,12 @@ header > span > ul > li > a > p:hover {
     font-size: 0.6em;
     padding: 0.5em 0em;
 }
+
+
+#hebergements > p  {
+    margin-top: 1.5em;
+}
+
 
 #hebergements > p > a {
     color: #000000;
@@ -489,7 +495,7 @@ footer > div > h4 {
     }
 
 
-header > span > ul {
+header > div > ul {
     display: none;
 }
 
@@ -509,6 +515,11 @@ header > span > ul {
     header > nav > ul > li {
     display: none;
     }
+    
+    header > nav > ul > li:hover {
+    border-top: 0.2rem solid #FFFFFF;
+    }
+
     
     header > nav > ul > li:last-child{
     display: block;
@@ -728,7 +739,7 @@ header > span > ul {
     }
 }
 
-Responsive - Laptop 1440px
+/*Responsive - Laptop 1440px*/
 @media (max-width: 1439px) and (min-width: 1025px) {
     #hebergements > div {
     width: 48em;  
@@ -784,23 +795,88 @@ Responsive - Laptop 1440px
 
 /*Responsive - 4k*/
 @media (min-width: 2560px) {
+    
+    h1, h2 {
+    font-size: 1.5rem; 
+    }
+
+    h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    }
+    
+    footer > div > h4 {
+    font-size: 1.5rem;
+    }
+
+    p{
+    font-size: 1.5rem;
+    color:#000000;
+    }
+    
+    #recherche > form > div {
+    margin-top: 2em;
+    }
+    
+    #recherche > div {
+    margin-top: 3em;
+    }
+    
+    #hebergements > p > a {
+    font-size: 1.5rem;
+    }
+    
     #hebergements > div {
-    width: 118em;   
+    width: 107em;   
     }
     
     #hebergements > div > a > figure {
-    width: 38em;
-    height: 18em;
+    width: 34em;
+    height: 20em;
     }
+    
     #hebergements > div > a > figure > div > img {
     height: 12em;   
     }
+    
+    #hebergements > div > a > figure > figcaption > span > i {
+    font-size: 1em;
+    padding: 0.5em 0em;
+    }
+    
+    #populaires > div > a > figure{
+    height: 13em;
+    }
+    
+    #populaires > div > a > figure > figcaption > span {
+    font-size: 1em;
+    }
+    
+    #populaires > div > a > figure > figcaption > p {
+    font-size: 1.4rem;
+    }
+    
+    #populaires > div > a > figure > div > img {
+    width: 14em;
+    }
         
     .full > a > figure {
-    width: 40em;     
+    width: 40em;
+    height: 34em;
     }
+    
+    .full > a > figure > div > img {
+    height: 29em;
+    }
+    
     .list > a > figure {
     width: 33em; 
+    height: calc(32em / 2);
+    }
+    
+    .list > a > figure > div > img{
+    height: 11em;
+    }
 }
 
 
