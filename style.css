@@ -380,17 +380,18 @@ header > div > ul > li > a > p:hover {
     object-fit: cover;
     height: 100%;
     border-radius: 1rem 0 0 1rem;
-    width: 7em;
+    width: 6em;
 }
 
 
 #populaires > div > a > figure > figcaption {
     padding: 0.9em;
+    padding-top: 0em;
 }
 
 #populaires > div > a > figure > figcaption > p {
     font-size: 0.8rem;
-    padding: 1em 0em;   
+    padding: 0.4em 0em;  
 }
 
 #populaires > div > a > figure > figcaption > span {
@@ -436,7 +437,7 @@ header > div > ul > li > a > p:hover {
     border-radius: 1rem;
     box-shadow: 0 0 1em #0000002e;
     transition: transform 0.5s ease;
-    height: calc(20em / 2);
+    height: calc(21.5em / 2);
     width: 16em;
 }
 
@@ -574,14 +575,66 @@ header > div > ul {
         
     #hebergements > div > a > figure {
     width: 100%;
+    height: 15em;
+    }
+    
+    #hebergements > div > a > figure > div > img{
+    height: 10em;    
     }
     
     #populaires {
-    border-radius: 0em;
-    padding: 1em;
-    order: 0; /*Défaut is 1*/
+    width: 100%;
+    margin-top: 1em;
+    }
+    
+    #populaires > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    
+    
+#populaires > div > a > figure {
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    }
+    
+#populaires > div > a > figure > div {
     width: 100%;
     }
+    
+#populaires > div > a > figure > div > img {
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    height: 10em;
+    width: 100%;
+}
+
+
+#populaires > div > a > figure > figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+    align-content: space-around;
+    height: 100%;
+}
+
+#populaires > div > a > figure > figcaption > span {
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
+    padding: 0.3em 0em;
+}
+
+#populaires > div > a > figure > figcaption > span, #populaires > div > a > figure > figcaption > p, #hebergements > div > a > figure > figcaption > h3 {
+    padding: 0.2em 0em;
+}
+
+#populaires > div > a > figure > figcaption > span > i {
+    font-size: 1em;
+    padding: 0.5em 0em;
+}
     
     #activites {
     padding: 0em 1em;
@@ -593,18 +646,24 @@ header > div > ul {
     }
     
     .full > a > figure {
-    height: 10em;
+    height: 13.5em;
     width: 100%;
     margin-top: 1em;
     }
     
     .full > a > figure > div > img {
-    height: 7em;
+    height: 10em;
     width: 100%;
     }
     
     .list > a > figure {
+    height: 13.5em;
+    width: 100%;
     margin-top: 1em;
+    }
+    
+    .list > a > figure > div > img {
+    height: 10em;
     width: 100%;
     }
     
@@ -617,6 +676,9 @@ header > div > ul {
     margin-top: 2em;
     }
     
+        #populaires > div > a > figure > figcaption > h3 {
+    font-size: 0.8em;
+    }
 }
 
 /*Responsive - tablette 768px*/
@@ -663,14 +725,58 @@ header > div > ul {
     width: 100%;
     margin-top: 1em;
     }
-        
-    #populaires > div > a > figure > div > img {
-    width: 16em;   
+    
+    #populaires > div:last-child {
+    display: flex;
+    justify-content: space-between;
     }
     
-    #populaires > div > a > figure {
-    height: 11.4em;
+    
+#populaires > div > a > figure {
+    height: 13.4em;
+    width: 13em;
+    display: flex;
+    flex-direction: column;
     }
+    
+#populaires > div > a > figure > div {
+    width: 100%;
+    }
+    
+#populaires > div > a > figure > div > img {
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    height: 6em;
+    width: 100%;
+}
+
+
+#populaires > div > a > figure > figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+    align-content: space-around;
+    height: 100%;
+}
+
+#populaires > div > a > figure > figcaption > span {
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
+    padding: 0.3em 0em;
+}
+
+#populaires > div > a > figure > figcaption > span, #populaires > div > a > figure > figcaption > p, #hebergements > div > a > figure > figcaption > h3 {
+    padding: 0.2em 0em;
+}
+
+#populaires > div > a > figure > figcaption > span > i {
+    font-size: 1em;
+    padding: 0.5em 0em;
+}
+
+
+    
     
     #activites > div {
     flex-wrap: wrap;
@@ -703,7 +809,11 @@ header > div > ul {
     
     footer {
     padding: 3em 1.3em;    
-    }   
+    }  
+        #populaires > div > a > figure > figcaption > h3 {
+    font-size: 0.8em;
+    }
+
 }
 
 
@@ -737,6 +847,10 @@ header > div > ul {
     .full > a > figure {
     width: 15em;   
     }
+        #populaires > div > a > figure > figcaption > h3 {
+    font-size: 0.8em;
+    }
+
 }
 
 /*Responsive - Laptop 1440px*/
@@ -746,7 +860,10 @@ header > div > ul {
     }
     
     .full > a > figure {
-    width: 21em;
+    width: 18em;
+    }
+    #populaires > div > a > figure > figcaption > h3 {
+    font-size: 0.8em;
     }
 }   
 
