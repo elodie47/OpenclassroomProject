@@ -292,7 +292,6 @@ header > div > ul > li > a > p:hover {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
-
 }
 
 #hebergements > div > a > figure:hover {
