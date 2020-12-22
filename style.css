@@ -571,6 +571,10 @@ header > div > ul {
     #hebergements > div {
     width: 100%;
     }
+    
+    #hebergements > div > a {
+    width: 100%;
+    }
         
     #hebergements > div > a > figure {
     width: 100%;
@@ -681,7 +685,7 @@ header > div > ul {
 }
 
 /*Responsive - tablette 768px*/
-@media (max-width: 768px) and (min-width: 600px) {
+@media (max-width: 768px) and (min-width: 601px) {
     
     header, main {
     margin: 0em 1em;
@@ -712,12 +716,20 @@ header > div > ul {
     flex-wrap: wrap;
     }
     
+    #hebergements {
+    background-color: #f2f2f2;
+    border-radius: 1em;
+    padding: 2em;
+    margin-right: 0em; 
+    
+    }
+    
     #hebergements > div {
     width: 100%;   
     }
     
     #hebergements > div > a > figure {
-    width: 13em;
+    width: 12em;
     }
     
     #populaires {
@@ -733,7 +745,7 @@ header > div > ul {
     
 #populaires > div > a > figure {
     height: 13.4em;
-    width: 13em;
+    width: 10em;
     display: flex;
     flex-direction: column;
     }
@@ -783,10 +795,11 @@ header > div > ul {
     
     .full{
     margin-bottom: 1em;  
+    width: 100%;
     }
     
     .full > a > figure {
-    width: 46em;
+    width: 100%;
     }
     
     .list {
@@ -799,7 +812,7 @@ header > div > ul {
     
     .list > a > figure {
     height: calc(26em / 2);
-    width: 22em;
+    width: 18em;
     }
     
     .list > a > figure > div > img {
@@ -812,13 +825,318 @@ header > div > ul {
         #populaires > div > a > figure > figcaption > h3 {
     font-size: 0.8em;
     }
+    
+    footer > div:last-child {
+    margin-right: 0em;
+}
+
+}
+
+
+
+/*Responsive - tablette 768px*/
+@media (max-width: 863px) and (min-width: 768px) {
+    
+    header, main {
+    margin: 0em 1em;
+    }
+    
+    /*filtres*/
+    #recherche {
+    margin: 0 1em;
+    }
+    
+    #recherche > div {
+    display: inline-block;
+    }
+    
+    #recherche > div > ul > li {
+    margin: 0.5em 0.5em 0em 0em;
+    }
+    
+    #recherche > div > ul, #recherche > div > ul > li > a, #recherche > div:last-child {
+    padding: 0em;
+    }
+    
+    #recherche > div:last-child {
+    flex-wrap: nowrap;
+    }
+    
+    #contenu-main {
+    flex-wrap: wrap;
+    }
+    
+    #hebergements {
+    background-color: #f2f2f2;
+    border-radius: 1em;
+    padding: 2em;
+    margin-right: 0em; 
+    
+    }
+    
+    #hebergements > div {
+    width: 100%;   
+    }
+    
+    #hebergements > div > a > figure {
+    width: 12em;
+    }
+    
+    #populaires {
+    width: 100%;
+    margin-top: 1em;
+    }
+    
+    #populaires > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    
+#populaires > div > a > figure {
+    height: 13.4em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    }
+    
+#populaires > div > a > figure > div {
+    width: 100%;
+    }
+    
+#populaires > div > a > figure > div > img {
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    height: 6em;
+    width: 100%;
+}
+
+
+#populaires > div > a > figure > figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+    align-content: space-around;
+    height: 100%;
+}
+
+#populaires > div > a > figure > figcaption > span {
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
+    padding: 0.3em 0em;
+}
+
+#populaires > div > a > figure > figcaption > span, #populaires > div > a > figure > figcaption > p, #hebergements > div > a > figure > figcaption > h3 {
+    padding: 0.2em 0em;
+}
+
+#populaires > div > a > figure > figcaption > span > i {
+    font-size: 1em;
+    padding: 0.5em 0em;
+}
+
+
+    
+    
+    #activites > div {
+    flex-wrap: wrap;
+    }
+    
+    .full{
+    margin-bottom: 1em;  
+    width: 100%;
+    }
+    
+    .full > a > figure {
+    width: 100%;
+    }
+    
+    .list {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em; 
+    width: 100%;
+    }
+    
+    .list > a > figure {
+    height: calc(26em / 2);
+    width: 22.8em;
+    }
+    
+    .list > a > figure > div > img {
+    height: 10em;    
+    }
+    
+    footer {
+    padding: 3em 1.3em;    
+    }  
+        #populaires > div > a > figure > figcaption > h3 {
+    font-size: 0.8em;
+    }
+    
+    footer > div:last-child {
+    margin-right: 0em;
+}
+
+}
+
+
+
+
+/*Responsive - tablette 768px*/
+@media (max-width: 960px) and (min-width: 863px) {
+    
+    header, main {
+    margin: 0em 1em;
+    }
+    
+    /*filtres*/
+    #recherche {
+    margin: 0 1em;
+    }
+    
+    #recherche > div {
+    display: inline-block;
+    }
+    
+    #recherche > div > ul > li {
+    margin: 0.5em 0.5em 0em 0em;
+    }
+    
+    #recherche > div > ul, #recherche > div > ul > li > a, #recherche > div:last-child {
+    padding: 0em;
+    }
+    
+    #recherche > div:last-child {
+    flex-wrap: nowrap;
+    }
+    
+    #contenu-main {
+    flex-wrap: wrap;
+    }
+    
+    #hebergements {
+    background-color: #f2f2f2;
+    border-radius: 1em;
+    padding: 2em;
+    margin-right: 0em; 
+    
+    }
+    
+    #hebergements > div {
+    width: 100%;   
+    }
+    
+    #hebergements > div > a > figure {
+    width: 15em;
+    }
+    
+    #populaires {
+    width: 100%;
+    margin-top: 1em;
+    }
+    
+    #populaires > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    
+#populaires > div > a > figure {
+    height: 13.4em;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    }
+    
+#populaires > div > a > figure > div {
+    width: 100%;
+    }
+    
+#populaires > div > a > figure > div > img {
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    height: 6em;
+    width: 100%;
+}
+
+
+#populaires > div > a > figure > figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+    align-content: space-around;
+    height: 100%;
+}
+
+#populaires > div > a > figure > figcaption > span {
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
+    padding: 0.3em 0em;
+}
+
+#populaires > div > a > figure > figcaption > span, #populaires > div > a > figure > figcaption > p, #hebergements > div > a > figure > figcaption > h3 {
+    padding: 0.2em 0em;
+}
+
+#populaires > div > a > figure > figcaption > span > i {
+    font-size: 1em;
+    padding: 0.5em 0em;
+}
+
+
+    
+    
+    #activites > div {
+    flex-wrap: wrap;
+    }
+    
+    .full{
+    margin-bottom: 1em;  
+    width: 100%;
+    }
+    
+    .full > a > figure {
+    width: 100%;
+    }
+    
+    .list {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em; 
+    width: 100%;
+    }
+    
+    .list > a > figure {
+    height: calc(26em / 2);
+    width: 26em;
+    }
+    
+    .list > a > figure > div > img {
+    height: 10em;    
+    }
+    
+    footer {
+    padding: 3em 1.3em;    
+    }  
+        #populaires > div > a > figure > figcaption > h3 {
+    font-size: 0.8em;
+    }
+    
+    footer > div:last-child {
+    margin-right: 0em;
+}
 
 }
 
 
 /*Responsive - desktop 1024px*/
 
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 961px) {
     header, main {
     margin: 0em 1em;
     }
@@ -852,8 +1170,44 @@ header > div > ul {
 
 }
 
+@media (max-width: 1265px) and (min-width: 1025px) {
+    header, main {
+    margin: 0em 1em;
+    }
+    
+    #hebergements {
+    margin-right: 1em;
+    }
+    
+    #hebergements > div {
+    width: 40em;;
+    }
+    
+    #hebergements > div > a > figure {
+    width: 18.5em;
+    }
+    
+    #activites > div {
+    flex-wrap: wrap;
+    }
+    
+    .list > a > figure {
+    width: 14em;    
+    }
+    
+    .full > a > figure {
+    width: 15em;   
+    }
+        #populaires > div > a > figure > figcaption > h3 {
+    font-size: 0.8em;
+    }
+
+}
+
+
+
 /*Responsive - Laptop 1440px*/
-@media (max-width: 1439px) and (min-width: 1025px) {
+@media (max-width: 1439px) and (min-width: 1266px) {
     #hebergements > div {
     width: 48em;  
     }
@@ -907,6 +1261,9 @@ header > div > ul {
     height: 26em;   
     }
 }
+
+
+
 
 
 /*Responsive - 4k*/
