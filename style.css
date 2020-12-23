@@ -745,7 +745,7 @@ header > div > ul {
     
 #populaires > div > a > figure {
     height: 13.4em;
-    width: 10em;
+    width: 11em;
     display: flex;
     flex-direction: column;
     }
@@ -1221,13 +1221,120 @@ header > div > ul {
 }   
 
 
-/*Responsive - HD 1920px*/
-@media (max-width: 1920px) and (min-width: 1441px) {
+@media (max-width: 1514px) and (min-width: 1440px) {
     #hebergements > div {
-    width: 75em;
+    width: 50em;
     }
     #hebergements > div > a > figure {
-    width: 24em;
+    width: 14em;
+    height: 11em;
+    }
+    .full > a > figure {
+    width: 17em;
+    height: 29.5em;
+    }
+    .list > a > figure {
+    width: 22em;
+    height: calc(28em / 2);
+    }
+    .list > a > figure > div > img {
+    border-radius: 1rem 1rem 0 0rem;
+    object-fit: cover;
+    height: 10em;
+    width: 100%;
+    }
+    .full > a > figure > div > img {
+    border-radius: 1rem 1rem 0 0rem;
+    object-fit: cover;
+    height: 26em;
+    width: 100%;
+    }
+}
+
+@media (max-width: 1672px) and (min-width: 1515px) {
+    
+    #hebergements > div {
+    width: 56em;
+    }
+    #hebergements > div > a > figure {
+    width: 18em;
+    height: 15em;
+    }
+    #populaires > div > a > figure > div > img {
+    width: 9em;
+    }
+    #hebergements > div > a > figure {
+    width: 18em;
+    height: 12em;
+    }
+    .list > a > figure {
+    width: 23em;
+    height: calc(28em / 2);
+    }
+    .full > a > figure {
+    width: 19em;
+    height: 29.5em;
+    }
+    .list > a > figure > div > img {
+    border-radius: 1rem 1rem 0 0rem;
+    object-fit: cover;
+    height: 10em;
+    width: 100%;
+    }
+    .full > a > figure > div > img {
+    border-radius: 1rem 1rem 0 0rem;
+    object-fit: cover;
+    height: 26em;
+    width: 100%;
+    }
+}
+
+@media (max-width: 1813px) and (min-width: 1673px) {
+    #hebergements > div {
+    width: 63em;
+    }
+    #hebergements > div > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #00000014;
+    transition: transform 0.5s ease;
+    flex-grow: 1;
+    width: 20em;
+    height: 11em;
+    padding: 0.4em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+    
+    .full > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: 23em;
+    width: 25em;
+    }
+    
+    .list > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: calc(21.5em / 2);
+    width: 23em;
+}
+}
+
+
+
+/*Responsive - HD 1920px*/
+@media (max-width: 1920px) and (min-width: 1814px) {
+    #hebergements > div {
+    width: 72em;
+    }
+    #hebergements > div > a > figure {
+    width: 23em;
     height: 15em;
     }
     
@@ -1263,11 +1370,178 @@ header > div > ul {
 }
 
 
+@media (max-width: 2051px) and (min-width: 1921px) {
+    #hebergements > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 78em;
+    }
+    #hebergements > div > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #00000014;
+    transition: transform 0.5s ease;
+    flex-grow: 1;
+    width: 25em;
+    height: 12em;
+    padding: 0.4em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    }
+    
+    .full > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: 23em;
+    width: 27em;
+    }
+    .list > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: calc(21.5em / 2);
+    width: 28em;
+    }
+
+}
+
+@media (max-width: 2208px) and (min-width: 2052px) {
+    #hebergements > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 86em;
+    }
+    
+    #hebergements > div > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #00000014;
+    transition: transform 0.5s ease;
+    flex-grow: 1;
+    width: 28em;
+    height: 12em;
+    padding: 0.4em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    }
+    
+    .full > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: 23em;
+    width: 27em;
+    }
+    .list > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: calc(21.5em / 2);
+    width: 28em;
+    }
+
+}
+
+
+@media (max-width: 2311px) and (min-width: 2209px) {
+    #hebergements > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 97em;
+    }
+    
+    #hebergements > div > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #00000014;
+    transition: transform 0.5s ease;
+    flex-grow: 1;
+    width: 28em;
+    height: 12em;
+    padding: 0.4em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    }
+    
+    .full > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: 23em;
+    width: 33em;
+    }
+    .list > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: calc(21.5em / 2);
+    width: 33em;
+    }
+
+}
+
+
+@media (max-width: 2559px) and (min-width: 2312px) {
+    
+    #hebergements > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 103em;
+    }
+    #hebergements > div > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #00000014;
+    transition: transform 0.5s ease;
+    flex-grow: 1;
+    width: 33em;
+    height: 12em;
+    padding: 0.4em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    }
+
+    .full > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: 23em;
+    width: 33em;
+    }
+    .list > a > figure {
+    background: #fffFFF;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #0000002e;
+    transition: transform 0.5s ease;
+    height: calc(21.5em / 2);
+    width: 33em;
+    }
+}
 
 
 
 /*Responsive - 4k*/
-@media (min-width: 2560px) {
+@media (min-width: 2560px)  {
     
     h1, h2 {
     font-size: 1.5rem; 
